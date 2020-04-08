@@ -1,3 +1,5 @@
+// Link to problem : https://www.linkedin.com/posts/women-who-code-delhi_hi-everyone-here-is-the-question-for-day-activity-6653185173842161664-BtX0
+
 int bonusPoints(vector<int> rankings){
 	int n = rankings.size();
 	vector<int> fromLeft(n,1);
