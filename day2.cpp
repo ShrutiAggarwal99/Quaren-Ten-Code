@@ -1,3 +1,5 @@
+// Link to problem : https://www.linkedin.com/posts/women-who-code-delhi_hi-everyone-here-is-the-question-for-day-activity-6652814667729211392-B4NU
+
 vector<int> solve(ListNode *head){
 	ListNode *cur = head;
 	int n = 0;
