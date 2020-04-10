@@ -11,9 +11,11 @@ void recursivelySolve(vector<int> &orig,int st,int en,vector<int> &ans){
       recursivelySolve(nums,lSt,lEn,ans);
       recursivelySolve(nums,rSt,rEn,ans);
 
-      sort(nums.begin()+rSt, nums.begin()+rEn+1); // can be done using pointers too instead of sorting
-      for(int i=lSt;i<=lEn;i++)
+      sort(nums.begin()+rSt, nums.begin()+rEn+1); 
+      for(int i=lSt;i<=lEn;i++){
+          // can be done using pointers too instead of lower_bound
           ans[i] += lower_bound(nums.begin()+rSt, nums.begin()+rEn+1, nums[i]) - (nums.begin()+rSt);
+      }
 
   }
 
